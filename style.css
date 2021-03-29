@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+img {
+  max-width: 40vw;
+  max-height: 40vh;
+}
