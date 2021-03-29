@@ -1,9 +1,9 @@
 function getImage () {
-  const imageNum = (
-    Math.floor(Math.random() * process.env.NUM_IMAGES) + 1
-  ).toString()
+  const imageNum = Math.floor(Math.random() * process.env.NUM_IMAGES) + 1
 
-  return new Array(4 - imageNum.length + 1).join('0') + imageNum
+  return (
+    new Array(4 - imageNum.toString().length + 1).join('0') + imageNum + '.webp'
+  )
 }
 
 const handler = async event => {
